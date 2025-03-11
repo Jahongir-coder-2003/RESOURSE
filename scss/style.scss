@@ -383,8 +383,122 @@ footer {
     }
   }
 }
+@media(min-width:560px){
+   nav {
+    top: 78px;
+  }
+  .header-position {
+    padding: 0 300px;
+    flex-wrap: wrap;
+    gap: 80px;
+  }
+  .nav-links {
+    gap: 460px;
+  }
+  .page1 {
+    background-image: url(../images/pag1-bg.png);
+    height: 700px;
+  }
+  .page1-info {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 50px;
+    h1 {
+      text-align: start;
+      font-size: 100px;
+      line-height: 100px;
+      span {
+        font-size: 100px;
+      }
+    }
+    p {
+      text-align: start;
+      width: 445px;
+      font-weight: 600;
+      font-size: 18px;
+    }
+  }
+  .page2 {
+    height: 684px;
+  }
+  .page2-position {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 125px;
+    h2 {
+      font-size: 48px;
+    }
+    .page2-cards {
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+    }
+    .card {
+      text-align: start;
+      display: flex;
+      flex-direction: row;
+      gap: 23px;
+      p {
+        width: 445px;
+      }
+    }
+  }
+  .page3 {
+    background-image: url(../images/page3-bg.png);
+    height: 745px;
+  }
+  .page3-position {
+    padding: 0 165px;
+    justify-content: center;
+    align-items: center;
+    h2 {
+      font-size: 48px;
+      span {
+        font-size: 48px;
+      }
+    }
+    .page3-cards {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+  }
 
-@media (min-width: 560px) {
+  .page4 {
+    background-image: url(../images/page4-bg.png);
+    height: 200px;
+  }
+  .page4-position {
+    flex-direction: row;
+    padding: 0 165px;
+    justify-content: center;
+    align-items: center;
+    gap: 240px;
+  }
+  footer {
+    height: 196px;
+  }
+  .container2 {
+    display: flex;
+
+    flex-direction: row;
+    gap: 100px;
+
+    .paragraphs {
+      text-align: start;
+    }
+
+    .icons {
+      img {
+        display: flex;
+      }
+    }
+  }
+}
+@media (min-width: 920px) {
   nav {
     top: 78px;
   }
