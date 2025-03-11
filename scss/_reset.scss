@@ -10,5 +10,9 @@
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
 }
-
-
+// 1440 - 2 * 165 + 2 * 20
+.container {
+  max-width: 1110px;
+  margin: 0 auto;
+  padding: 0 20px;
+}

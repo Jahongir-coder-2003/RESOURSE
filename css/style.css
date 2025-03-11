@@ -11,6 +11,12 @@
   font-family: "Inter", sans-serif;
 }
 
+.container {
+  max-width: 1110px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
 .menu {
   width: 40px;
   height: 40px;
@@ -28,30 +34,31 @@ nav ul a {
 }
 
 nav {
-  right: 0;
+  position: fixed;
+  padding-top: 73px;
+  top: 0;
+  width: 100%;
+  z-index: 1;
 }
 
 .header-position {
   display: flex;
   align-items: center;
-  justify-content: center;
   gap: 80px;
 }
 
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 600px;
+  gap: 577px;
 }
 
 .btn {
-  width: 153;
-  height: 48;
-  padding: 9px 33px;
+  width: 153px;
+  height: 48px;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
   border-radius: 24px;
   border: 2px solid white;
   outline: none;
@@ -59,15 +66,25 @@ nav {
   font-weight: 600;
   font-size: 18px;
 }
+.btn a {
+  text-decoration: none;
+  color: white;
+}
+
+.position2 {
+  position: absolute;
+  bottom: 0;
+  right: 165px;
+}
 
 .page1 {
-  top: 0;
-  background-image: url(../images/pag1-bg.png);
   width: 100%;
   height: 700px;
+  background-color: #014e56;
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
 .page1-info {
@@ -96,17 +113,24 @@ nav {
 }
 
 .page2 {
-  background-image: url(../images/page2-bg.png);
+  background-color: #012f34;
   width: 100%;
   height: 700px;
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 .page2 h2 {
   font-weight: 700;
   font-size: 48px;
   color: white;
+}
+
+.position3 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 .card {
@@ -144,8 +168,7 @@ nav {
 }
 
 .page3 {
-  top: 0;
-  background-image: url(../images/page3-bg.png);
+  background-color: rgb(0, 64, 71);
   width: 100%;
   height: 700px;
   display: flex;
@@ -268,9 +291,10 @@ footer ul a {
 }
 
 .container2 {
+  width: 100%;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   gap: 125px;
 }
 
@@ -285,348 +309,4 @@ footer ul a {
   color: white;
   opacity: 0.6;
   padding-top: 51px;
-}
-
-@media (min-width: 360px) {
-  nav {
-    height: 150px;
-    position: fixed;
-    top: 0;
-    padding: 20px;
-    background-color: #012f34;
-  }
-  .header-position {
-    padding: 0 20px;
-    flex-wrap: wrap;
-    gap: 10px;
-  }
-  .nav-links {
-    gap: 10px;
-  }
-  .page1 {
-    background-image: url(../images/page1-bg360.png);
-    height: 567px;
-  }
-  .page1-info {
-    flex-direction: column;
-    align-items: center;
-  }
-  .page1-info h1 {
-    text-align: center;
-    font-size: 40px;
-    line-height: 10px;
-  }
-  .page1-info h1 span {
-    font-size: 40px;
-  }
-  .page1-info p {
-    margin-top: -30px;
-    width: 327px;
-    line-height: 20px;
-    font-size: 15px;
-    text-align: center;
-  }
-  .page2 {
-    height: 1073px;
-  }
-  .page2-position {
-    padding: 0 20px;
-    flex-direction: column;
-  }
-  .page2-position h2 {
-    font-size: 32px;
-    padding-left: 100px;
-  }
-  .page2-position .page2-cards {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: -60px;
-    gap: 130px;
-  }
-  .page2-position .card {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 10px;
-  }
-  .page2-position .card p {
-    width: 327px;
-  }
-  .page3 {
-    background-image: url(../images/page3-bg360.png);
-    height: 1410px;
-  }
-  .page3-position {
-    padding: 0 20px;
-  }
-  .page3-position h2 {
-    font-size: 32px;
-  }
-  .page3-position h2 span {
-    font-size: 32px;
-  }
-  .page3-position .page3-cards {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 48px;
-  }
-  .page4 {
-    background-image: url(../images/page4-bg360.png);
-    height: 302px;
-  }
-  .page4-position {
-    padding: 0 20px;
-    flex-direction: column;
-    align-items: center;
-    gap: 24px;
-  }
-  .page4-position h2 {
-    text-align: center;
-  }
-  footer {
-    height: 432px;
-  }
-  .container2 {
-    flex-direction: column;
-    gap: 24px;
-  }
-  .container2 .paragraphs {
-    text-align: center;
-  }
-  .container2 .icons img {
-    display: none;
-  }
-}
-@media (min-width: 560px) {
-  nav {
-    height: 150px;
-    position: fixed;
-    top: 0;
-    background-color: transparent;
-  }
-  .header-position {
-    padding: 0 20px;
-    gap: 60px;
-  }
-  .nav-links {
-    gap: 150px;
-  }
-  .page1 {
-    background-image: url(../images/page1-bg360.png);
-    height: 567px;
-  }
-  .page1-info {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-  }
-  .page1-info h1 {
-    text-align: left;
-    font-size: 60px;
-    line-height: 30px;
-  }
-  .page1-info h1 span {
-    font-size: 60px;
-  }
-  .page1-info p {
-    width: 327px;
-    line-height: 20px;
-    font-size: 15px;
-    text-align: left;
-  }
-  .page2 {
-    height: 1073px;
-  }
-  .page2-position {
-    padding: 0 20px;
-    flex-direction: column;
-  }
-  .page2-position h2 {
-    font-size: 32px;
-  }
-  .page2-position .page2-cards {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: -60px;
-    gap: 130px;
-  }
-  .page2-position .card {
-    flex-direction: row;
-    align-items: center;
-    text-align: left;
-    gap: 10px;
-  }
-  .page3 {
-    background-image: url(../images/page3-bg360.png);
-    height: 1410px;
-  }
-  .page3-position {
-    padding: 0 20px;
-  }
-  .page3-position h2 {
-    font-size: 32px;
-  }
-  .page3-position h2 span {
-    font-size: 32px;
-  }
-  .page3-position .page3-cards {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 48px;
-  }
-  .page4 {
-    background-image: url(../images/page4-bg360.png);
-    height: 302px;
-  }
-  .page4-position {
-    padding: 0 20px;
-    flex-direction: column;
-    align-items: center;
-    gap: 24px;
-  }
-  .page4-position h2 {
-    text-align: center;
-  }
-  footer {
-    height: 432px;
-  }
-  .container2 {
-    flex-direction: column;
-    gap: 24px;
-  }
-  .container2 .paragraphs {
-    text-align: center;
-  }
-  .container2 .icons img {
-    display: none;
-  }
-}
-@media (min-width: 920px) {
-  nav {
-    position: fixed;
-    top: 0;
-    padding-top: 73px;
-    background: transparent;
-  }
-  .header-position {
-    padding: 0 165px;
-    gap: 80px;
-  }
-  .nav-links {
-    gap: 300px;
-  }
-  .page1 {
-    background-image: url(../images/pag1-bg.png);
-    height: 700px;
-  }
-  .page1-info {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    justify-content: center;
-    gap: 50px;
-  }
-  .page1-info h1 {
-    text-align: start;
-    font-size: 100px;
-    line-height: 100px;
-  }
-  .page1-info h1 span {
-    font-size: 100px;
-  }
-  .page1-info p {
-    text-align: start;
-    width: 445px;
-    font-weight: 600;
-    font-size: 18px;
-  }
-  .page2 {
-    height: 684px;
-  }
-  .page2-position {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 125px;
-  }
-  .page2-position h2 {
-    font-size: 48px;
-  }
-  .page2-position .page2-cards {
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-  }
-  .page2-position .card {
-    text-align: start;
-    display: flex;
-    flex-direction: row;
-    gap: 23px;
-  }
-  .page2-position .card p {
-    width: 445px;
-  }
-  .page3 {
-    background-image: url(../images/page3-bg.png);
-    height: 745px;
-  }
-  .page3-position {
-    padding: 0 165px;
-    justify-content: center;
-    align-items: center;
-  }
-  .page3-position h2 {
-    font-size: 48px;
-  }
-  .page3-position h2 span {
-    font-size: 48px;
-  }
-  .page3-position .page3-cards {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-  }
-  .page4 {
-    background-image: url(../images/page4-bg.png);
-    height: 200px;
-  }
-  .page4-position {
-    flex-direction: row;
-    padding: 0 165px;
-    justify-content: center;
-    align-items: center;
-    gap: 260px;
-  }
-  footer {
-    height: 196px;
-  }
-  .container2 {
-    display: flex;
-    flex-direction: row;
-    gap: 125px;
-  }
-  .container2 .paragraphs {
-    text-align: start;
-  }
-  .container2 .icons img {
-    display: flex;
-  }
-}
-@media (min-width: 1280px) {
-  nav {
-    position: fixed;
-    top: 0;
-    padding-top: 73px;
-    background: transparent;
-  }
-  .header-position {
-    padding: 0 300px;
-    gap: 80px;
-  }
-  .nav-links {
-    gap: 577px;
-  }
 }

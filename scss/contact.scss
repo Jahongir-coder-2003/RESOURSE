@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  max-width: 1260px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+html,
+body {
+  font-family: sans-serif;
+}
+main {
+  background-color: #014e56;
+}
+.text_form {
+  background-color: #014e56;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .text {
+    margin: 120px 0;
+    h1 {
+      font-weight: 700;
+      font-size: 64px;
+      line-height: 100px;
+      letter-spacing: 0px;
+      color: white;
+    }
+    p {
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 48px;
+      letter-spacing: 0px;
+      color: #f67e7e;
+      padding: 16px 0 32px;
+    }
+    .MINICARDS {
+      .miniCArds {
+        display: flex;
+        align-items: center;
+        gap: 23px;
+        margin: 8px 0;
+        a {
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 28px;
+          letter-spacing: 0px;
+          color: white;
+          text-decoration: none;
+          &:hover {
+            text-decoration: underline;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+  form {
+    max-width: 542px;
+    input {
+      width: 100%;
+      margin-top: 24px;
+      padding: 14px;
+      background-color: #014e56;
+      border: none;
+      color: white;
+      border-bottom: 1px solid white;
+      font-weight: 600;
+      font-size: 15px;
+      line-height: 25px;
+      letter-spacing: -0.12px;
+      &:focus {
+        outline: none;
+      }
+    }
+    .submit {
+      margin-top: 32px;
+      padding: 9px 32px;
+      background-color: white;
+      border: none;
+      border-radius: 24px;
+      cursor: pointer;
+      transition: all ease-in-out 0.2s;
+      &:hover {
+        background-color: #002f3a;
+        color: white;
+        border: none;
+        text-decoration: none;
+      }
+    }
+  }
+}
