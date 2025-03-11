@@ -393,15 +393,15 @@ footer {
     position: fixed;
     top: 0;
 
-    background-color: var.$green;
+    background-color: transparent;
   }
   .header-position {
-    padding: 0 165px;
+    padding: 0 20px;
 
-    gap: 10px;
+    gap: 60px;
   }
   .nav-links {
-    gap: 10px;
+    gap: 150px;
   }
   .page1 {
     background-image: url(../images/page1-bg360.png);
