@@ -145,7 +145,7 @@ nav {
 
 .page3 {
   position: relative;
-  
+
   background-color: var.$page3-bg;
   width: 100%;
   height: 700px;
@@ -205,13 +205,19 @@ nav {
   display: flex;
   flex-direction: column;
 }
-.position4{
+.position4 {
   position: absolute;
   top: 0;
   left: 0;
 }
+.position5 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
 .page4 {
-  background-image: url(../images/page4-bg.png);
+  position: relative;
+  background-color: var.$lightRed;
   width: 100%;
   height: 200px;
   display: flex;
