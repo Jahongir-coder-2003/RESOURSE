@@ -502,12 +502,13 @@ footer {
 }
 @media (min-width: 920px) {
   nav {
+    position: fixed;
     top: 78px;
   }
   .header-position {
     width: 100%;
     justify-content: center;
-    padding: 0 300px;
+    padding: 0 165px;
     flex-wrap: wrap;
     gap: 80px;
   }
