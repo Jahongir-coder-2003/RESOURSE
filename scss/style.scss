@@ -412,7 +412,7 @@ footer {
     flex-direction: row;
     align-items: flex-end;
     h1 {
-      text-align: center;
+      text-align: left;
       font-size: 60px;
       line-height: 30px;
       span {
@@ -508,12 +508,12 @@ footer {
     background: transparent;
   }
   .header-position {
-    padding: 0 300px;
-    flex-wrap: wrap;
+    padding: 0 165px;
+   
     gap: 80px;
   }
   .nav-links {
-    gap: 577px;
+    gap: 300px;
   }
   .page1 {
     background-image: url(../images/pag1-bg.png);
@@ -618,4 +618,22 @@ footer {
       }
     }
   }
+}
+
+
+@media(min-width:1280px){
+   nav {
+    position: fixed;
+    top: 0;
+    padding-top: 73px;
+    background: transparent;
+  }
+  .header-position {
+    padding: 0 300px;
+   
+    gap: 80px;
+  }
+  .nav-links {
+    gap: 577px;
+  } 
 }
