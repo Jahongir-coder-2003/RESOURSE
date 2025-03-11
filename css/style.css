@@ -564,7 +564,7 @@ footer ul a {
     display: flex;
   }
   .page1 .position2 {
-    right: 165px;
+    right: 0;
   }
   .page1 .page1-info {
     flex-wrap: wrap;
@@ -587,13 +587,12 @@ footer ul a {
   }
   .page2 {
     height: 684px;
-    height: 1073px;
   }
   .page2 h2 {
     font-size: 48px;
   }
   .page2 .page2-position {
-    flex-wrap: wrap;
+    flex-wrap: row;
     gap: 125px;
   }
   .page2 .card {
@@ -613,9 +612,6 @@ footer ul a {
     right: 0;
     top: 0;
   }
-  .page2 h2 {
-    font-size: 32px;
-  }
   .page3 {
     height: 745px;
   }
@@ -627,6 +623,7 @@ footer ul a {
   }
   .page3 .page3-cards {
     flex-direction: row;
+    gap: 30px;
     justify-content: center;
   }
   .page4 {
@@ -641,7 +638,7 @@ footer ul a {
     font-size: 48px;
   }
   footer {
-    height: 4196px;
+    height: 196px;
   }
   footer .container2 {
     flex-direction: row;
