@@ -1,0 +1,12 @@
+.all {
+  background-color: #004047;
+}
+.all .center-title {
+  width: 100%;
+  text-align: center;
+}
+.all .center-title h2 {
+  font-weight: 700;
+  font-size: 48px;
+  color: white;
+}/*# sourceMappingURL=about.css.map */

@@ -34,11 +34,12 @@ nav ul a {
 }
 
 nav {
+  display: flex;
   position: fixed;
   padding-top: 73px;
   top: 0;
   width: 100%;
-  z-index: 10;
+  z-index: 1;
 }
 
 .header-position {
@@ -54,8 +55,6 @@ nav {
 }
 
 .btn {
-  text-decoration: none;
-  color: white;
   width: 153px;
   height: 48px;
   display: flex;
@@ -67,6 +66,10 @@ nav {
   background-color: transparent;
   font-weight: 600;
   font-size: 18px;
+}
+.btn a {
+  text-decoration: none;
+  color: white;
 }
 
 .position2 {
