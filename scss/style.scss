@@ -34,9 +34,8 @@ nav {
   gap: 577px;
 }
 .btn {
-
-    text-decoration: none;
-    color: var.$white;
+  text-decoration: none;
+  color: var.$white;
 
   width: 153px;
   height: 48px;
@@ -312,6 +311,10 @@ footer {
 
     .nav-links {
       gap: 20px;
+      a {
+        text-decoration: none;
+        color: var.$white;
+      }
     }
   }
   .page1 {

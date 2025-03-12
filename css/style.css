@@ -12,7 +12,9 @@
 }
 
 .container {
-  max-width: 1110px;
+  max-width: 1260px;
+  margin: 0 auto;
+  max-width: 1260px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -344,6 +346,10 @@ footer ul a {
   nav .nav-links {
     gap: 20px;
   }
+  nav .nav-links a {
+    text-decoration: none;
+    color: white;
+  }
   .page1 {
     height: 567px;
   }
@@ -648,4 +654,4 @@ footer ul a {
     justify-content: center;
     gap: 125px;
   }
-}/*# sourceMappingURL=style.css.map */
+}
